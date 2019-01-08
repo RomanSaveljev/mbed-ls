@@ -42,7 +42,13 @@ del logging
 LOCAL_PLATFORM_DATABASE = join(user_data_dir("mbedls"), "platforms.json")
 LOCAL_MOCKS_DATABASE = join(user_data_dir("mbedls"), "mock.json")
 
+ST_BOARDS = {
+    u'0744': u'NUCLEO_F410RB',
+    u'0745': u'NUCLEO_F303RE'
+}
+
 DEFAULT_PLATFORM_DB = {
+    u'stlink': ST_BOARDS,
     u'daplink': {
         u'0001': u'LPC2368',
         u'0002': u'LPC2368',
@@ -123,8 +129,6 @@ DEFAULT_PLATFORM_DB = {
         u'0740': u'NUCLEO_F411RE',
         u'0742': u'NUCLEO_F413ZH',
         u'0743': u'DISCO_F413ZH',
-        u'0744': u'NUCLEO_F410RB',
-        u'0745': u'NUCLEO_F303RE',
         u'0746': u'DISCO_F303VC',
         u'0747': u'NUCLEO_F303ZE',
         u'0750': u'NUCLEO_F091RC',
@@ -316,7 +320,7 @@ DEFAULT_PLATFORM_DB = {
         u'C035': u'UBLOX_C030_R3121',
         u'FFFF': u'K20 BOOTLOADER',
         u'RIOT': u'RIOT',
-    },
+    }.update(ST_BOARDS),
     u'jlink': {
         u'X729475D28G': {
             u'platform_name': u'NRF51_DK',
