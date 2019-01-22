@@ -320,7 +320,7 @@ DEFAULT_PLATFORM_DB = {
         u'C035': u'UBLOX_C030_R3121',
         u'FFFF': u'K20 BOOTLOADER',
         u'RIOT': u'RIOT',
-    }.update(ST_BOARDS),
+    },
     u'jlink': {
         u'X729475D28G': {
             u'platform_name': u'NRF51_DK',
@@ -347,7 +347,7 @@ DEFAULT_PLATFORM_DB = {
         u'2241': 'SAML21J18A'
     }
 }
-
+DEFAULT_PLATFORM_DB['daplink'].update(ST_BOARDS)
 
 def _get_modified_time(path):
     try:
