@@ -44,7 +44,10 @@ LOCAL_MOCKS_DATABASE = join(user_data_dir("mbedls"), "mock.json")
 
 ST_BOARDS = {
     u'0744': u'NUCLEO_F410RB',
-    u'0745': u'NUCLEO_F303RE'
+    u'0745': u'NUCLEO_F303RE',
+    u'0730': u'NUCLEO_F072RB',
+    u'0760': u'NUCLEO_L073RZ',
+    u'0740': u'NUCLEO_F411RE'
 }
 
 DEFAULT_PLATFORM_DB = {
@@ -124,16 +127,13 @@ DEFAULT_PLATFORM_DB = {
         u'0715': u'NUCLEO_L053R8',
         u'0720': u'NUCLEO_F401RE',
         u'0725': u'NUCLEO_F030R8',
-        u'0730': u'NUCLEO_F072RB',
         u'0735': u'NUCLEO_F334R8',
-        u'0740': u'NUCLEO_F411RE',
         u'0742': u'NUCLEO_F413ZH',
         u'0743': u'DISCO_F413ZH',
         u'0746': u'DISCO_F303VC',
         u'0747': u'NUCLEO_F303ZE',
         u'0750': u'NUCLEO_F091RC',
         u'0755': u'NUCLEO_F070RB',
-        u'0760': u'NUCLEO_L073RZ',
         u'0764': u'DISCO_L475VG_IOT01A',
         u'0765': u'NUCLEO_L476RG',
         u'0766': u'SILICA_SENSOR_NODE',
